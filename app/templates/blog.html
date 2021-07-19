@@ -13,14 +13,14 @@
 <body>
     <h1> Blog </h1>
     {% for post in posts%}
-        <div class='project'>
-            <h2>{{post['name']}}</h2>
-            <h3>{{post['date']}}</h3>
-            <img src= {{post['img'][0]}} alt={{post['img'][1]}} style= "float: left;">
+    <div class='project'>
+        <h2>{{post['name']}}</h2>
+        <h3>{{post['date']}}</h3>
+        <img src={{post['img'][0]}} alt={{post['img'][1]}} style="float: left;">
         <div class='text'>
             {{post['descrip']}}
         </div>
-        </div>
+    </div>
     {% endfor %}
     <nav>
         <ul>
@@ -28,6 +28,8 @@
             <li><a href="/projects">Projects</a></li>
             <li><a href="/blog">Blog</a></li>
             <li><a href="/contact">Contact</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
         </ul>
     </nav>
 </body>
