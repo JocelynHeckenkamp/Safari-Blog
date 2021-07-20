@@ -17,3 +17,19 @@ services:
     restart: always
     env_file:
       - .env
+
+  nginx:
+    image: nginx
+    restart: unless-stopped
+    env_file:
+      - ./.env
+    ports:
+      - 80
+      - 443:443
+    volumes:
+      - ./user_conf.d:/etc/nginx/user_conf.d
+    depends_on:
+      - web
+
+volumes:
+  nginx_secrets:
