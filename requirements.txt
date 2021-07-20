@@ -1,6 +1,10 @@
 Babel==2.5.1
 click==8.0.1
 Flask==2.0.1
+Flask-Migrate==3.0.1
+Flask-SQLAlchemy==2.5.1
+flask_migrate
+flask_sqlalchemy
 gunicorn==20.1.0
 importlib-metadata==4.5.0
 itsdangerous==2.0.1
@@ -8,9 +12,11 @@ Jinja2==3.0.1
 jsonpatch==1.21
 jsonpointer==1.10
 jsonschema==2.6.0
+psycopg2-binary
 python-dotenv==0.17.1
 requests==2.20.0
 requests-toolbelt==0.9.1
+SQLAlchemy==1.4.19
 typing-extensions==3.10.0.0
 Werkzeug==2.0.1
 zipp==3.4.1
